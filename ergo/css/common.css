@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+:root {
+  --header_font: 'DM Serif Display', serif;
+  --partial_black: #0d0d0d;
+  --partial_black_light: rgba(13, 13, 13, 10%);
+  --pink: #ec1f25;
+  --white: #fff;
+  --lightgray: #f5f6f8
+}
+
+html {
+  font-size: 10px;
+  color: #0d0d0d;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f3f3f3;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: gray;
+}
+
+:-ms-input-placeholder {
+  color: gray;
+}
+
+::placeholder {
+  color: gray;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #3d3d3d;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+.h1 {
+  font-family: var(--header_font);
+  line-height: 1;
+  margin: 0 0 20px 0;
+  color: var(--partial_black);
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.56;
+  color: #3d3d3d;
+  margin: 0 0 15px 0;
+  text-align: justify;
+}
+
+p.small-font {
+  font-size: 1.8rem;
+  line-height: 1.56;
+}
+
+h1,
+.h1 {
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 6rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+  font-weight: normal;
+  font-family: var(--header_font);
+  margin: 2rem 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.center {
+  text-align: center;
+}
+
+.overauto {
+  overflow: hidden;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.temp-message {
+  position: fixed;
+  width: 300px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+  -webkit-transition: max-height 0.8s;
+  -moz-transition: max-height 0.8s;
+  transition: max-height 0.8s;
+  box-shadow: 5px 5px 5px rgba(138, 126, 126, 0.18);
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 9999;
+  text-align: center;
+  color: #000;
+  border: 1px solid #f5f5f5;
+  background: #f9edbe;
+  border-radius: 5px;
+}
+
+.temp-message p {
+  font-size: 1.3rem;
+}
+
+video {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+section {
+  display: inline-block;
+  width: 100%
+}
+
+footer {
+  display: inline-block;
+  width: 100%;
+  background: #fff;
+  padding: 20px 0
+}
+
+.transition {
+  transition: all ease .5s
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.mb4 {
+  margin-bottom: 4rem;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+  clear: both
+}
+
+.clg-10,
+.clg-11,
+.clg-12,
+.clg-2,
+.clg-3,
+.clg-4,
+.clg-5,
+.clg-6,
+.clg-7,
+.clg-8,
+.clg-9,
+.clg-l,
+.cmd-10,
+.cmd-11,
+.cmd-12,
+.cmd-2,
+.cmd-3,
+.cmd-4,
+.cmd-5,
+.cmd-6,
+.cmd-7,
+.cmd-8,
+.cmd-9,
+.cmd-l,
+.csm-10,
+.csm-11,
+.csm-12,
+.csm-2,
+.csm-3,
+.csm-4,
+.csm-5,
+.csm-6,
+.csm-7,
+.csm-8,
+.csm-9,
+.csm-l,
+.cxm-10,
+.cxm-11,
+.cxm-12,
+.cxm-2,
+.cxm-3,
+.cxm-4,
+.cxm-5,
+.cxm-6,
+.cxm-7,
+.cxm-8,
+.cxm-9,
+.cxm-l {
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  float: left
+}
+
+.clg-l {
+  width: 8.33333%
+}
+
+.clg-2 {
+  width: 16.66666667%
+}
+
+.clg-3 {
+  width: 25%
+}
+
+.clg-4 {
+  width: 33.33333333333333%
+}
+
+.clg-5 {
+  width: 41.66666666666667%
+}
+
+.clg-6 {
+  width: 50%
+}
+
+.clg-7 {
+  width: 58.33333333333333%
+}
+
+.clg-8 {
+  width: 66.66666666666667%
+}
+
+.clg-9 {
+  width: 75%
+}
+
+.clg-10 {
+  width: 83.33333333333333%
+}
+
+.clg-11 {
+  width: 91.66666666666667%
+}
+
+.clg-12 {
+  width: 100%
+}
+
+@media only screen and (max-width:1024px) {
+  .cmd-l {
+    width: 8.33333%
+  }
+
+  .cmd-2 {
+    width: 16.66666667%
+  }
+
+  .cmd-3 {
+    width: 25%
+  }
+
+  .cmd-4 {
+    width: 33.33333333333333%
+  }
+
+  .cmd-5 {
+    width: 41.66666666666667%
+  }
+
+  .cmd-6 {
+    width: 50%
+  }
+
+  .cmd-7 {
+    width: 58.33333333333333%
+  }
+
+  .cmd-8 {
+    width: 66.66666666666667%
+  }
+
+  .cmd-9 {
+    width: 75%
+  }
+
+  .cmd-10 {
+    width: 83.33333333333333%
+  }
+
+  .cmd-11 {
+    width: 91.66666666666667%
+  }
+
+  .cmd-12 {
+    width: 100%
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .csm-l {
+    width: 8.33333%
+  }
+
+  .csm-2 {
+    width: 16.66666667%
+  }
+
+  .csm-3 {
+    width: 25%
+  }
+
+  .csm-4 {
+    width: 33.33333333333333%
+  }
+
+  .csm-5 {
+    width: 41.66666666666667%
+  }
+
+  .csm-6 {
+    width: 50%
+  }
+
+  .csm-7 {
+    width: 58.33333333333333%
+  }
+
+  .csm-8 {
+    width: 66.66666666666667%
+  }
+
+  .csm-9 {
+    width: 75%
+  }
+
+  .csm-10 {
+    width: 83.33333333333333%
+  }
+
+  .csm-11 {
+    width: 91.66666666666667%
+  }
+
+  .csm-12 {
+    width: 100%
+  }
+}
+
+@media only screen and (max-width:700px) {
+  .cxm-l {
+    width: 8.33333%
+  }
+
+  .cxm-2 {
+    width: 16.66666667%
+  }
+
+  .cxm-3 {
+    width: 25%
+  }
+
+  .cxm-4 {
+    width: 33.33333333333333%
+  }
+
+  .cxm-5 {
+    width: 41.66666666666667%
+  }
+
+  .cxm-6 {
+    width: 50%
+  }
+
+  .cxm-7 {
+    width: 58.33333333333333%
+  }
+
+  .cxm-8 {
+    width: 66.66666666666667%
+  }
+
+  .cxm-9 {
+    width: 75%
+  }
+
+  .cxm-10 {
+    width: 83.33333333333333%
+  }
+
+  .cxm-11 {
+    width: 91.66666666666667%
+  }
+
+  .cxm-12 {
+    width: 100%
+  }
+}
+
+a.btn {
+  display: flex;
+  border-radius: 5rem;
+  padding: 2rem 5rem;
+  font-size: 18px;
+  line-height: 1.38;
+  font-weight: 700;
+  color: #01b7ec;
+  transition: .5s;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  border: 2px solid #01b7ec;
+}
+
+a.btn:hover {
+  color: #fff;
+  background: #01b7ec;
+  border: 2px solid #01b7ec;
+}
+
+.btn_main {
+  transition: .5s;
+  color: #01b7ec;
+  border-radius: 5rem;
+  padding: 2rem 5rem;
+  border: 2px solid #01b7ec;
+  display: table;
+  font-size: 18px;
+  display: table;
+  margin: 30px auto;
+  font-weight: 700;
+  display: table;
+  text-shadow: none;
+}
+
+.btn_main span {
+  color: #3d3d3d;
+}
+
+.btn_main:hover {
+  color: #fff;
+  color: #fff;
+  background: #01b7ec;
+  border: 2px solid #01b7ec;
+}
+
+.btn_main_fill {
+  transition: .5s;
+  color: #fff;
+  border-radius: 5rem;
+  padding: 2rem 5rem;
+  background: #01b7ec;
+  display: table;
+  font-size: 18px;
+  display: table;
+  margin: 30px auto;
+  font-weight: 700;
+  display: table;
+  text-shadow: none;
+}
+
+.btn_main_fill:hover {
+  color: #fff;
+  background: none;
+  border: 2px solid #01b7ec;
+}
+
+.card-container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  /* Adjust margin for spacing between cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  width: 22%;
+  /* Set fixed width for each card */
+  display: flex;
+  /* Allow stacking icon and text vertically */
+  flex-direction: column;
+  /* Align content vertically */
+}
+
+.card h2 {
+  font-size: 18px;
+  margin: 0;
+  color: black;
+  /* Remove margins for proper alignment with icon */
+}
+
+.card p {
+  line-height: 1.5;
+  text-align: left;
+  /* Left align text content */
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    display: flex;
+    /* Make each card take full width on smaller screens */
+    flex-direction: column;
+    /* Switch to flex-column for smaller screens */
+  }
+  .card-container{
+    display: flex;
+    /* Make each card take full width on smaller screens */
+    flex-direction: column;
+  }
+}
+
+/* Include Font Awesome CSS (replace with your own CDN link if needed) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+.flex {
+  display: flex;
+  gap: 30px;
+}
